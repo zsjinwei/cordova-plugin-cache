@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="at.modalog.cordova.plugin.cache"
+    id="com.stardrv.cordova.plugin.cache"
     version="1.1.0">
 
     <name>Cache</name>
-    <repo>https://github.com/moderna/cordova-plugin-cache.git</repo>
+    <repo>https://github.com/zsjinwei/cordova-plugin-cache.git</repo>
     <keywords>webview,cache,clear,android,ios</keywords>
     <license>MIT</license>
     <author>Modern Alchemists OG</author>
@@ -21,7 +21,7 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Cache" >
-                <param name="android-package" value="at.modalog.cordova.plugin.cache.Cache"/>
+                <param name="android-package" value="com.stardrv.cordova.plugin.cache.Cache"/>
             </feature>
         </config-file>
 
