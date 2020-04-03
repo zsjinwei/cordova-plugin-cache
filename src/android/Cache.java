@@ -61,6 +61,15 @@ public class Cache extends CordovaPlugin
 					{
 						try
 						{
+							CookieSyncManager.createInstance(activity);
+							CookieManager cookiemanager = CookieManager.getInstance();
+							cookiemanager.removeAllCookie();
+							CookieSyncManager.getInstance().sync();
+							
+							self.webView.setWebChromeClient(null);
+							self.webView.setWebViewClient(null);
+							self.webView.getSettings().setJavaScriptEnabled(false);
+
 							// clear the cache
 							self.webView.clearCache(true);
 							
